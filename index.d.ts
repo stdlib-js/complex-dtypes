@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2022 The Stdlib Authors.
@@ -16,25 +16,24 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { ComplexDataType } from '@stdlib/types/object';
 
 /**
-* Return a list of complex number data types.
+* Returns a list of complex number data types.
 *
-* @module @stdlib/complex-dtypes
+* @returns list of complex number data types
 *
 * @example
-* var dtypes = require( '@stdlib/complex-dtypes' );
-*
 * var list = dtypes();
 * // e.g., returns [ 'complex64', 'complex128' ]
 */
-
-// MODULES //
-
-var dtypes = require( './main.js' );
+declare function dtypes(): Array<ComplexDataType>;
 
 
 // EXPORTS //
 
-module.exports = dtypes;
+export = dtypes;
