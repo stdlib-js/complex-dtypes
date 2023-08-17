@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2022 The Stdlib Authors.
@@ -16,33 +16,24 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
 
-var indexOf = require( '@stdlib/utils-index-of' );
-var dtypes = require( './../lib' );
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var DTYPES = dtypes();
-var bool;
+import { ComplexDataType } from '@stdlib/types/complex';
 
-function isdtype( str ) {
-	if ( indexOf( DTYPES, str ) === -1 ) {
-		return false;
-	}
-	return true;
-}
+/**
+* Returns a list of complex number data types.
+*
+* @returns list of complex number data types
+*
+* @example
+* var list = dtypes();
+* // e.g., returns [ 'complex64', 'complex128' ]
+*/
+declare function dtypes(): Array<ComplexDataType>;
 
-bool = isdtype( 'complex128' );
-console.log( bool );
-// => true
 
-bool = isdtype( 'complex64' );
-console.log( bool );
-// => true
+// EXPORTS //
 
-bool = isdtype( 'float64' );
-console.log( bool );
-// => false
-
-bool = isdtype( 'beep' );
-console.log( bool );
-// => false
+export = dtypes;
