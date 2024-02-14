@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-dtypes@esm/index.mjs';
+import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-dtypes@v0.2.0-esm/index.mjs';
 ```
 
 #### dtypes()
@@ -96,7 +96,7 @@ The output `array` contains the following data types:
 <script type="module">
 
 import indexOf from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-index-of@esm/index.mjs';
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-dtypes@esm/index.mjs';
+import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-dtypes@v0.2.0-esm/index.mjs';
 
 var DTYPES = dtypes();
 var bool;
